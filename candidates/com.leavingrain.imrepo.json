@@ -18,7 +18,7 @@
   "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
   "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
   "license": "Apache-2.0",
-  "releaseNotes": "Upload and download image archives (.tar/.tar.gz) as docker save or OCI image layout, plus Docker Registry v2 projects, registry overview charts, and one badge per architecture.",
+  "releaseNotes": "Image archive upload and download: push a local docker save archive or OCI image layout (.tar/.tar.gz) straight into any registry-v2 / Harbor connection, and export any tag or digest as a Docker archive (docker load-ready) or OCI image layout (skopeo/podman-readable), gzip optional, with per-platform selection for multi-arch images and an all-platform OCI export. Uploads are chunked and the browser side streams straight to a host-chosen file (browser download fallback on web hosts). Also fixed: empty projects no longer break the sidebar, pull commands and copy buttons share one icon style with a copy confirmation, and Harbor audit logs gained a date-range filter. Known limit: archives around 140 MB / images around 410 MB were verified; larger images are not fully covered. Security note: the last connection password / CLI secret is cached base64-encoded (encoding, not encryption) in credentials.json under the plugin data directory; prefer least-privilege Harbor robot accounts or read-only tokens and delete the file when no longer needed.",
   "targets": [
     {
       "target": "darwin-arm64",
