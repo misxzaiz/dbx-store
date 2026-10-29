@@ -3,8 +3,8 @@
   "id": "com.polaris.api",
   "publisher": "misxzaiz",
   "source": "https://github.com/misxzaiz/polaris-api",
-  "version": "0.1.0",
-  "releaseNotes": "Initial release: import OpenAPI/Swagger and Postman Collection v2.1 into a searchable endpoint catalog tree with per-endpoint parameter/body/schema browsing, cURL copy and Markdown export.",
+  "version": "0.1.1",
+  "releaseNotes": "Initial release: import OpenAPI/Swagger and Postman Collection v2.1 into a searchable endpoint catalog tree with per-endpoint parameter/body/schema browsing, cURL copy and Markdown export.\n\n0.1.1: declare host.storage (persistence previously failed silently in the sandbox), add LICENSE, fix manifest $schema branch.",
   "name": "polaris-api",
   "description": "API asset library: import OpenAPI/Swagger and Postman Collections into a searchable catalog tree; browse method, path, parameters, request body and response schemas per endpoint; one-click cURL copy and Markdown export.",
   "license": "Apache-2.0",
@@ -17,7 +17,8 @@
     "documentation",
     "debugging"
   ],
-  "permissions": [],
+  "permissions": ["host.storage"],
+  "icon": "https://raw.githubusercontent.com/misxzaiz/polaris-api/v0.1.1/assets/plugin.svg",
   "localizations": {
     "zh-CN": {
       "name": "polaris-api",
@@ -27,9 +28,9 @@
   "targets": [
     {
       "target": "universal",
-      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.1.0/com.polaris.api-0.1.0-universal.dbxp",
-      "sha256": "c7a1bdc795a7deef59ebc826970adbcc0be524d2dd016f3aa56cdbbcf3d046e4",
-      "size": 48869
+      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.1.1/com.polaris.api-0.1.1-universal.dbxp",
+      "sha256": "d5e6a0883d002e8813c0e69633ac52338432ad6a4284c728b00d0abc64300008",
+      "size": 48874
     }
   ]
 }
